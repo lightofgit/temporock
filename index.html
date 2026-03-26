@@ -660,7 +660,8 @@ function updateProgress(mintedCount) {
 
 // Simple local counter (resets per browser — replace with on-chain read when ready)
 function getMintedCount() {
-  return parseInt(localStorage.getItem('rocknft_minted') || '0');
+  return 47; // ← kaç mint yapıldıysa buraya yaz
+}
 }
 function incrementMinted(n) {
   const cur = getMintedCount();
